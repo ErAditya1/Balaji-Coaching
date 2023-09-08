@@ -1,0 +1,923 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+  }
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: solid black 0.15rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.menu-bar {
+    background-color: transparent;
+    /* text-align: center; */
+    height: 7rem;
+    width: 100%;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #1467bf;
+    margin-left: 14.5rem;
+    font-size: 2rem;
+}
+
+.menu-bar .logo-BC {
+    position:absolute;
+    cursor: pointer;
+    margin-left: 1rem;
+    background: url(/20230711_103920.png);
+    background-size: cover;
+    height: 6rem;
+    width: 6rem;
+    order: 3 !important;
+  
+  }
+  
+  .menu-bar .logo-BC h3 {
+    
+    
+    border-right:2px solid #080909;
+    border-bottom: 2px solid #080909;
+    font-size: 1.9rem;
+    position: fixed;
+    background-color: rgb(241, 241, 142);
+    background-size: cover;
+    z-index: -1;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 2.8rem 8rem;
+    padding-right: 2.5rem;
+    order: 3 !important;
+  }
+  
+
+.menu-bar .btn-login {
+    order: 3 !important;
+    justify-content: flex-end !important;
+    display: flex !important;
+    float: right;
+
+}
+
+.button {
+    margin-top: .8rem;
+    margin-right: 1.5rem;
+    border: none;
+    padding: 1.4rem 2.4rem;
+    gap: 1rem;
+    width: px;
+    height: 4.8rem;
+    background: #5a4bda;
+    color: #fff;
+    border-radius: .8rem;
+    font-style: normal;
+    /* font-weight: 70; */
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+.sidebar{
+    position: fixed;
+    background-color: aliceblue;
+    width: 25rem;
+    border-right: .3rem solid blue;
+    display: none;
+    font-size: 1.7rem;
+    order: 3 !important;
+}
+
+.menu-bar .b {
+    width: 10rem;
+    margin: 2rem .5rem;
+    
+    box-sizing: border-box;
+}
+
+.menu-bar .store {
+    margin-top: .7rem;
+    margin-left: .7rem;
+    
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+}
+
+
+.store:hover,
+.b:hover,
+.button:hover {
+    transform: scale(1.15);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact{
+    display: none;
+}
+
+
+.nav{
+   
+    position: relative;
+    display: inline-flex;
+    list-style: none;
+    color: #1467bf;
+    font-size: 1.666rem;
+    margin-left: 10.5rem;
+    font-size: 2rem;
+    
+}
+
+
+
+
+
+
+.header .sidebar ul li:hover a {
+    padding-left: 6rem;
+}
+
+.header .sidebar ul a i {
+    margin-right: 1.6rem;
+}
+
+.header #side-check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    display: none;
+}
+
+label #btn {
+
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #051a30;
+    border-radius: .3rem;
+    left: .8rem;
+    top: 2.5rem;
+    font-size: 2.5rem;
+    color: white;
+
+
+}
+
+#cancel {
+    position: fixed;
+    z-index: 1111;
+    left: -21.5rem;
+    top: 6rem;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: .6rem;
+    padding: .25rem;
+    color: #051a30;
+    transition: all 0.45s ease;
+}
+
+#side-check:checked~.sidebar{
+    left: 0;
+}
+
+#side-check:checked~label #btn {
+    left: -25rem;
+}
+
+#side-check:checked~label #cancel {
+    left: 21rem;
+}
+
+#side-check:checked~.bg {
+    margin-left: 25rem;
+}
+
+.bg {
+    background-color: aquamarine;
+    transition: all 0.5s ease;
+    margin-left: 25rem;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+  @media (max-width: 920px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  @media (max-width: 668px) {
+    html {
+      font-size: 45%;
+    }
+  }
+  @media (max-width: 432px) {
+    html {
+      font-size: 40%;
+    }
+  }
+  @media (max-width: 375px) {
+    html {
+      font-size: 35%;
+    }
+  }
+  @media (max-width: 335px) {
+    html {
+      font-size: 30%;
+    }
+  }
+  
+  @media (max-width: 290px) {
+    html {
+      font-size: 25%;
+    }
+  }
+  @media (max-width: 236px) {
+    html {
+      font-size: 20%;
+    }
+  }
+@media (max-width: 800px) {
+
+    .menu-bar .logo-BC {
+        margin-left: 4rem;
+    }
+
+    .menu-bar .logo-BC h3 {
+        margin-left: -4rem;
+        padding-left: 11rem;
+        padding: 2.95rem 1.1rem 2.95rem 11rem;
+        font-size: 1.7rem;
+        
+      }
+
+    .header label #btn,
+    .header label #cancel {
+        display: block;
+    }
+    .header .sidebar ul a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 4rem;
+        font-size: 1.8 rem;
+        text-decoration: none;
+        padding-left: 4rem;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255.255, 255, 0.1);
+        border-bottom: .1rem solid black;
+        transition: 0.4s;
+    
+    }
+    .contact{
+        display: block;
+        line-height: 5rem;
+        margin-left: 2rem;
+    }
+    .header .sidebar {
+        left: -30rem;
+        display: block;
+    }
+
+    .navbar .nav {
+        display: none;
+    }
+
+    .bg {
+        margin-left: 0;
+    }
+
+
+}
+
+.space{
+    height: 15vh;
+    background-color: transparent;
+    width: 100vw;
+}
+
+
+.course{
+    list-style: none;
+    text-decoration: none;
+    /* position: fixed; */
+    left: 0;
+    width: 25rem;
+   
+    display: inline-block;
+    border-right: solid blue;
+    transition: all 0.5s ease;
+}
+
+.course header{
+    display: inline-block;
+    font-size: 2rem;
+    color: #051a30;
+    background-color: antiquewhite;
+    text-align: center;
+    line-height: 4rem;
+    user-select: none;
+    width: 100%;
+   
+}
+
+/* .course i{
+    display: flex;
+    margin-left: 190px;
+    margin-top: -15px;
+    font-size: 20px;
+} */
+.dropdown{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    border-top: .1rem solid rgba(255.255, 255, 0.1);
+    border-bottom: .1rem solid black;
+    transition: 0.4s;
+    
+}
+.select{
+    background-color: yellow;
+    padding-left: 4rem;
+    transition: 0.4s;
+    
+}
+.select-clicked{
+    border: .2rem solid rgb(61, 61, 6);
+    box-shadow: 0 0 0.8em #e4f805ac;
+}
+.select:hover{
+    padding-left: 2rem;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: .7rem solid transparent;
+    border-right: .7rem solid transparent;
+    border-top: 1rem solid hsl(0, 60%, 1%);
+    transition: 0.3s;
+    position: absolute;
+    margin-left: 16rem;
+    margin-top: -2.3rem;
+
+}
+
+.caret-rotate{
+    transform: (180deg);
+}
+
+
+.menu{
+    /* position: absolute; */
+    
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li{
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+.menu a{
+    padding-left: 4rem;
+    list-style: circle inside black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+   
+    
+    
+    box-sizing: border-box;
+    border-top: .1rem solid rgba(255.255, 255, 0.1);
+    border-bottom: .1rem solid black;
+    transition: 0.4s;
+}
+
+.menu li:hover a {
+    padding-left: 3rem;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+.course ul a i {
+    margin-right: 1.6rem;
+}
+
+.video-space{
+    display: inline-block;
+    width: 70rem;
+    height: 52rem;
+
+    margin: 0rem;
+}
+.video-up iframe{
+    height: 18rem;
+    width: 32rem;
+    margin: 1rem;
+}
+
+.img-slider{
+    position: relative;
+    width: 100%;
+    height: 18.8vw;
+    margin: 1rem;
+    background: #fff;
+}
+
+.img-slider .slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle( 0% at 0 50%);
+    
+}
+.img-slider .slide.active{
+    clip-path: circle( 150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+    
+}
+.img-slider .slide img{
+    width: 100vw;
+    z-index: 0;
+    border-radius: 10px;
+}
+.img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    
+}
+
+.img-slider .navigation{
+    
+    position: absolute;
+    display: flex;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.img-slider .navigation .btn{
+    background: rgba(255,255, 255, 0.5);
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.img-slider .navigation .btn.active{
+    background: #2696E9;
+}
+
+
+
+
+
+.social-icon{
+    list-style: none;
+    position: fixed;
+    box-sizing: border-box;
+    float: right;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+    
+    
+}
+.social-icon ul{
+    list-style: none;
+    background-color: whitesmoke;
+    padding: .5rem;
+    margin-top: 35vh;
+    border:2px solid #080909;
+    border-radius: 10px;
+    
+}
+.social-icon ul li{
+    font-size: 3.5rem;
+    
+}
+ .whatsapp a{
+    color: green;
+    
+}
+.instagram a{
+    color: rgb(133, 31, 31);
+}
+ .twitter a{
+    color: rgb(63, 63, 237);
+}
+ .telegram a{
+    color: #4003DC;
+}
+ .youtube a{
+    color: red;
+    transition: 0.5s;
+}
+
+.social-icon ul li a:hover i{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+
+
+.logreg-box{
+    
+    display: flex;
+    justify-content:end;
+    
+}
+
+.contain-login{
+    display: flex;
+    width: 60rem;
+    height: 60rem;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 15px;
+    width: 0;
+    overflow: hidden;
+    
+
+    
+}
+.contain-login.Signin{
+    width: 61rem;
+}
+.container-login {
+    position: relative;
+    display: inline-block;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-login i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+
+}
+.container-login i:nth-child(1){
+    border-radius:  57% 74% 26% / 44% 30% 70%  56%;
+    animation: animate 6s linear infinite;
+}
+
+.container-login i:nth-child(2){
+    border-radius: 23% 77% 31% 69% / 71% 30% 70%  29%;
+    animation: animate 4s linear infinite;
+    }
+
+    .container-login i:nth-child(3){
+        border-radius: 44% 56% 42% 58% / 37% 65%  35%   65%;
+        animation: animate2 5s linear infinite;
+    }
+    
+
+    @keyframes animate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes animate{
+        0%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .container-login i{
+        border: 2px solid var(--clr);
+        filter: drop-shadow(0 0 20px var(--clr));
+    }
+
+.container-login:hover i{
+    border: 4px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+
+.container-login .login{
+    position: absolute;
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+
+.container-login .login h2{
+    font-size: 2.5em;
+    color: #fff;
+
+}
+
+.container-login .login .inputBx{
+    position: relative;
+    width: 100%;
+
+}
+
+.container-login .login .inputBx .fa-solid{
+    color: #fff;
+    font-size: 1.5rem;
+    animation: none;
+    
+    margin-top: 1.5rem;
+    margin-left: -2.4rem;
+    position: absolute;
+    
+}
+.container-login .login .inputBx input{
+    position: relative;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+
+
+}
+.container-login .login .inputBx input::placeholder{
+    columns: rgba(255, 255, 255, 0.75);
+}
+.container-login .login .inputBx input[type="submit"]{
+    background: linear-gradient(45deg,#ff357a,#fff172);
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.container-login .login .links{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+
+
+}
+
+
+.container-login .login .links a{
+    color: #fff;
+    text-decoration: none;
+}
+.container-login .login .links p{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-login .login .links a:hover{
+    text-decoration: underline;
+}
+
+/* sign up style */
+.contain-signup{
+    display: flex;
+    width: 60rem;
+    height: 60rem;
+    background: black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    
+
+}
+
+/* .contain-signup.Signup{
+    width: 61rem;
+} */
+.container-signup{
+
+    position: relative;
+    display: inline-block;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-signup i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+
+}
+.container-signup i:nth-child(1){
+    border-radius:  57% 74% 26% / 44% 30% 70%  56%;
+    animation: animate 6s linear infinite;
+}
+
+.container-signup i:nth-child(2){
+    border-radius: 23% 77% 31% 69% / 71% 30% 70%  29%;
+    animation: animate 4s linear infinite;
+    }
+
+    .container-signup i:nth-child(3){
+        border-radius: 44% 56% 42% 58% / 37% 65%  35%   65%;
+        animation: animate2 5s linear infinite;
+    }
+    
+
+    @keyframes animate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes animate{
+        0%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .container-signup i{
+        border: 2px solid var(--clr);
+        filter: drop-shadow(0 0 20px var(--clr));
+    }
+
+.container-signup:hover i{
+    border: 4px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+
+.container-signup .signup{
+    position: absolute;
+    width: 30rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+
+}
+
+
+
+.container-signup .signup h2{
+    font-size: 2em;
+    color: #fff;
+
+}
+
+.container-signup .signup .inputBx{
+    position: relative;
+    width: 100%;
+
+}
+.container-signup .signup .inputBx .fa-solid{
+    color: #fff;
+    font-size: 1.5rem;
+    animation: none;
+    
+    margin-top: 1.5rem;
+    margin-left: -2.4rem;
+    position: absolute;
+    
+}
+.container-signup .signup .inputBx input{
+    position: relative;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+
+
+}
+.container-signup .signup .inputBx input::placeholder{
+    columns: rgba(255, 255, 255, 0.75);
+}
+.container-signup .signup .inputBx input[type="submit"]{
+    background: linear-gradient(45deg,#ff357a,#fff172);
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.container-signup .signup .links{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+
+
+}
+
+
+.container-signup .signup .links a{
+    color: #fff;
+    text-decoration: none;
+}
+.container-signup .signup .links label {
+    color: #fff;
+    text-decoration: none;
+    margin-left: -4.2rem;
+   
+}
+
+.container-signup .signup .links p{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-signup .signup .links a:hover{
+    text-decoration: underline;
+}
+
+/* .contain-signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .contain-signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .contain-login{
+    opacity: 0;
+    pointer-events: none;
+} */
